@@ -4,6 +4,8 @@ import { Picker } from "@react-native-picker/picker";
 import {Box, NativeBaseProvider} from "native-base";
 
 export default function DropDown({ navigation }) {
+
+  const [sampleVariable, setSampleVariable] = useState([]);
   const [regions, setRegions] = useState([]);
   const [selectedRegion, setSelectedRegion] = useState("");
   const [cities, setCities] = useState([]);
